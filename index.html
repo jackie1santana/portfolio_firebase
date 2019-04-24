@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!--font awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <!--github version of font awesome-->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+ 
+  <link rel='stylesheet' href='https://www.w3schools.com/lib/w3.css'>
+  
+  <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Indie+Flower|Nanum+Pen+Script" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+<!--MapTiler API-->
+
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.js"></script>
+<style>
+  #map { height: 360px; width: 300px;}
+</style>
+
+
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138503300-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-138503300-1');
+</script>
+
+
+
+</head>
+
+<body>
+
+
+      
+
+   
+        <!-- Content here -->
+     
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+      
+    <ul class="w3-navbar" id="myNavbar">
+        
+      <li><a href="#" class="w3-padding-large" id="success">Success Comes From Burning Desire...<i class="fab fa-gripfire"></i></a></li>
+    
+      <!--Audio Player-->
+      <audio id="player" autoplay controls loop>
+        <source src="../audio/Pastel.mp3" type="audio/mp3">
+    </audio>
+
+        <iframe src="../audio/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+       
+      <li class="w3-hide-small w3-right">
+        <a href="#contact" class="w3-padding-large">Contact</a>
+      </li>
+      <li class="w3-hide-small w3-right">
+        <a href="#portfolio" class="w3-padding-large">Portfolio</a>
+      </li>
+      <li class="w3-hide-small w3-right">
+        <a href="#about" class="w3-padding-large">About</a>
+      </li>
+    </ul>
+  </div>
+
+
+  <!-- First Parallax Image with Logo Text -->
+  <div class="bgimg-1 w3-opacity w3-display-container">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <h1 class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="first-name">JACKIE </span> <span class="w3-hide-small last-name">SANTANA</span></h1>
+
+ 
+    </div>
+    
+  </div>
+
+            
+​
+
+  <!-- Container (About Section) -->
+  <div class="container">
+  <div id="about">
+    
+        <h2 class="w3-center">ABOUT ME</h2>
+       
+    <h5 class="w3-center">Hello, my name is Jackie Santana, I’m an ambitious individual who is vehemently
+        passionate about software engineering, front-end design and everything else relative to technological culture.</h5>
+    <!--  Profile Picture and Description  -->
+    <div class="w3-row">
+      <figure>
+        <img src="../img/girl.jpg" style="opacity: 0.7" id="profile" class="w3-circle" alt="Photo of Me">
+
+
+      <!-- Hide this text on small devices -->
+          <figcaption>
+       <p id="about-text"><em>"My love for coding was inspired by my passion for learning new things. As a kid I’ve always observed things differently and always looked at
+          life as an opportunity to learn and experience, innovate in ways to help others. 
+         The reason why I chose to learn code is because it is a euphoric feeling knowing that you can create something from literally nothing. When I create, 
+         I feel like I’m the most powerful person in the world. I love when I stumble upon a task to be quite challenging and difficult to figure out because situations like that keeps
+          my brain sharp and only makes me stronger. I just look at coding like one huge puzzle, just putting the pieces together until they all fit"</em>
+          <br><em>- Jackie Tristan Santana</em></p>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
+ 
+
+
+
+  <!-- Second Parallax Image with Portfolio Text -->
+  <div class="bgimg-2 w3-display-container" id="portfolio">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-light-grey w3-wide">PORTFOLIO</span>
+    </div>
+  </div>
+
+  <!-- Container (Portfolio Section) -->
+  
+  <div class="w3-content w3-container w3-padding-64">
+    <h2 class="w3-center">MY WORK</h2>
+    <p class="w3-center"><em>Here are some of my latest projects</em></p>
+  </div>
+  <!-- Responsive Grid. Two columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="container">
+
+  <div class="card-group">
+
+    <div class="card">
+        <a href="https://peacelovemotivation.com" target="_blank">
+          <div class="w3-hover-opacity">
+      <img src="img/Fwn3gQOaRxSqkKvL13kgWA_thumb_272.jpg" class="card-img-top" alt="Peace Love & Motivation Website"></a></div>
+      <div class="card-body">
+        <h5 class="card-title font2">Peace Love & Motivation</h5>
+        <p class="card-text">Inspirational quotes and motivational sayings have an amazing ability to change the way we feel about life. This is why I find them so interesting and crucial on our paths to success.</p>
+      </div>
+      <div class="card-footer">
+          <small class="text-muted"> Copyright &copy; 2019 All Rights Reserved</small>
+      </div>
+    </div>
+
+
+    <div class="card">
+        <a href="https://jackie1santana.github.io/wings-horns/" target="_blank">
+          <div class="w3-hover-opacity">
+      <img src="img/port2.jpg" class="card-img-top" alt="Wings & Horns Website"></a></div>
+      <div class="card-body">
+        <h5 class="card-title font2">Wings & Horns</h5>
+        <p class="card-text">Influential, innovative and progressive, Gucci is reinventing a wholly modern approach to fashion. Wings & Horns products represent the pinnacle of Italian craftsmanship and are unsurpassed for their quality and attention to detail. </p>
+      </div>
+      <div class="card-footer">
+          <small class="text-muted"> Copyright &copy; 2019 All Rights Reserved</small>
+      </div>
+    </div>
+
+
+    <div class="card">
+        <a href="https://jackie1santana.github.io/socialpro/" target="_blank">
+          <div class="w3-hover-opacity">
+      <img src="img/port3.jpg" class="card-img-top" alt="SocialPro Website"></a></div>
+      <div class="card-body">
+        <h5 class="card-title font2">SocialPro</h5>
+        <p class="card-text">SocialPro is a place where people come to connect, discover, and share. Showcasing artists and their work, the site gives people access to 53 million tracks and videos-the world's largest digital music library. </p>
+      </div>
+      <div class="card-footer">
+          <small class="text-muted">Copyright &copy; 2019 All Rights Reserved </small>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="card-group">
+    <div class="card"> <a href="https://jackie1santana.github.io/travel-light/" target="_blank">
+      <div class="w3-hover-opacity">
+      <img src="img/travel1.jpg" class="card-img-top" alt="Travel Light Website"></a></div>
+      <div class="card-body">
+        <h5 class="card-title font2">Travel Light</h5>
+        <p class="card-text">Here at Travel Light, we believe that fulfilling travel experiences begin not only with choosing the right destination, but having the right state of mind.</p>
+      </div>
+      <div class="card-footer">
+          <small class="text-muted">Copyright &copy; 2019 All Rights Reserved </small>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <a href="https://jackie1santana.github.io/steak-house/" target="_blank">
+      <div class="w3-hover-opacity">
+      <img src="img/port1.jpg" class="card-img-top" alt="Steak House Website"></a></div>
+      <div class="card-body">
+        <h5 class="card-title font2">Steak House</h5>
+        <p class="card-text">Today, Steak House family of 900+ restaurants is evolving the brand with our customers' favorites in mind. With reinvigorated dishes, a refreshed website, a restructured logo, and remodeling of select restaurants, we aim to make every guest experience feel more like modern Italy..</p>
+      </div>
+      <div class="card-footer">
+          <small class="text-muted"> Copyright &copy; 2019 All Rights Reserved</small>
+      </div>
+    </div>
+
+
+    <div class="card">
+        <a href="https://jackie1santana.github.io/apparelco/" target="_blank">
+          <div class="w3-hover-opacity">
+      <img src="img/port6.jpg" class="card-img-top" alt="Apparel & Co. Website"></a></div>
+      <div class="card-body">
+        <h5 class="card-title font2">Apparel & Co.</h5>
+        <p class="card-text">Apparel & Co. is the style source for fashion-forward young women and men, for everything from first job interviews to weekend parties. We believe in living for the moment, dressing for the moment and having a strong individual style.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted"> Copyright &copy; 2019 All Rights Reserved </small>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" style="max-width:100%">
+    </div>
+  </div>
+
+  <!-- Third Parallax Image with Portfolio Text -->
+  <div class="bgimg-3 w3-display-container" id="contact">
+    <div class="w3-display-middle">
+      <h2 class="w3-xxlarge w3-text-light-grey w3-wide">CONTACT</h2>
+    </div>
+  </div>
+
+
+
+
+  <!--Resume & Cover-->
+<br>
+  <div class="dropdown" style="text-align: center;">
+    <button class="btn btn-outline-info dropdown-toggle" style="font-size: 120%;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Check Out My Resume 
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="../documents/Jackie_Dev_Cover.pdf" download="Jackie Cover Letter">Jackie's Passionate Cover Letter <span style="color: hotpink;">❤</span></a>
+      <a class="dropdown-item" href="../documents/JackieSantanaResume.pdf" download="Jackie Resume">Jackie's Developer Resume <i class="fas fa-cloud-sun" style="color:coral;"></i></a>
+    </div>
+  </div>
+
+
+
+  <!-- Container (Contact Section) -->
+ 
+  <div class="w3-content w3-container w3-padding-64">
+    
+    <p class="w3-center"><strong><em>I'd love your feedback!</em></strong></p>
+
+    <address class="w3-row w3-padding-32 w3-section">
+
+
+      <div class="w3-col m4 w3-container"> 
+        <div id="map" class="w3-round-large"></div>
+        
+        <script>
+          var map = L.map('map').setView([29.7604, -95.3698], 5);
+          L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=S3T2VrAiu6LIVzHSShQn',{
+            tileSize: 512, 
+            zoomOffset: -1,
+            minZoom: 9,
+            attribution: '<a href="#" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank"></a>',
+            crossOrigin: true
+          }).addTo(map);
+          var marker = L.marker([29.7604, -95.3698]).addTo(map);
+        </script>
+        
+ </div>
+      
+  
+    
+
+      <div class="w3-col m8 w3-container w3-section">
+        <div class="w3-large w3-margin-bottom">
+          <i class="fa fa-map-marker w3-hover-text-black" style="width:30px"></i>Houston, Texas<br>
+          <i class="fa fa-phone w3-hover-text-black" style="width:30px"></i> Phone: (346)-282-9306<br>
+          <i class="fa fa-envelope w3-hover-text-black" style="width:30px"> </i> Email: JackieTristanSantana@Gmail.com<br>
+        </div>
+              <p>Swing by for a cup of coffee, or leave me a note:</p>
+<!--Netlify Sub-->
+<section>
+  
+    <div class="content">
+        <!--Name-->
+      <form name="contact" netlify>
+        <div class="fields">
+          <div class="field half">
+            <input type="text" name="name" id="name" placeholder="Name" />
+          </div>
+          </div>
+        
+          <!--Email-->
+          <div class="field half">
+            <input type="email" name="email" id="email" placeholder="Email" />
+          </div>
+         
+           <br>
+
+          <!--Message-->
+          <div class="field">
+            <textarea name="message" id="message" placeholder="Leave a Comment.." rows="7"></textarea>
+          </div>
+
+          
+
+          <!--spam filter recaptcha-->
+          <div class="field">
+           <div data-netlify-recaptcha="true"></div>
+          </div>
+       
+          <!--Button-->
+      
+        <ul class="actions">
+        
+          <p>
+            <li><button type="submit" class="btn btn-outline-info">Send Message</button></li>
+          </p>
+        </ul>
+      </form>
+    </div>
+   
+  </section>
+        
+
+    </address>
+  
+  </div>
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-black cf" class="footer">
+
+    <div class="w3-half">
+      <a target="_blank" href="https://github.com/jackie1santana">
+        <i class="fa fa-github fa-2x"></i>Github
+      </a>
+
+      <a target="_blank" href="https://www.linkedin.com/in/jackie-santana-0b36b0143/">
+        <i class="fa fa-linkedin-square fa-2x"></i>LinkedIn
+      </a>
+    </div>
+
+    <div>
+      <p class="w3-center-align">Made with <span class="heart-icon">❤</span> by Jackie Santana <br>  Copyright &copy; 2019 All Rights Reserved</p>
+    </div>
+  </footer>
+  
+
+  
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js'></script>
+
+  <script src="js/index.js"></script>
+
+ 
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
