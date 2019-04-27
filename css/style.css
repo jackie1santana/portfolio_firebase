@@ -78,16 +78,6 @@ html {
     
 }
 
-/* change color jackie santana name */
-
-.first-name:hover{
-color:rgb(218, 114, 166);
-}
-
-.last-name:hover{
-    color:rgb(19, 153, 153);
-}
-
 /* Turn off parallax scrolling for tablets and mobiles */
 @media only screen and (max-width: 1024px) {
 
