@@ -102,6 +102,7 @@ var setFunc = function nameColor2(){
 
     function e7(){
         setTimeout(function (){ e.style.color = 'hotpink'; }, 7000)
+        
     }
 }
     a1()
@@ -116,6 +117,8 @@ var setFunc = function nameColor2(){
 
 setInterval(setFunc, 1000)
 
+
+/*
 function nameColor3(){
     function a1(){
         if(colorSwitch2 === 'on'){
@@ -157,4 +160,4 @@ function nameColor3(){
     
 }
 
-
+*/
