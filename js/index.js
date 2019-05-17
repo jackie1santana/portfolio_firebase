@@ -117,47 +117,13 @@ var setFunc = function nameColor2(){
 
 setInterval(setFunc, 1000)
 
+//Loader
 
-/*
-function nameColor3(){
-    function a1(){
-        if(colorSwitch2 === 'on'){
-            setTimeout(function (){ a.style.color = 'cyan'; }, 1000)
-        }
-    }
+window.addEventListener("load", function(){
+    var loader = document.querySelector(".loader")
+    var word = document.querySelector("#word")
+    loader.style.display = 'none'
+    word.style.display = 'none'
     
-    
-    function b2(){
-        setTimeout(function (){ b.style.color = 'cyan'; }, 2000)
-    }
 
-    function o3(){
-        setTimeout(function (){ o.style.color = 'cyan'; }, 3000)
-    }
-
-    function u4(){
-        setTimeout(function (){ u.style.color = 'cyan'; }, 4000)
-    }
-
-    function t5(){
-        setTimeout(function (){ t.style.color = 'cyan'; }, 5000)
-    }
-
-    function m6(){
-        setTimeout(function (){ m.style.color = 'cyan'; }, 6000)
-    }
-
-    function e7(){
-        setTimeout(function (){ e.style.color = 'cyan'; }, 7000)
-    }
-    a1()
-    b2()
-    o3()
-    u4()
-    t5()
-    m6()
-    e7()
-    
-}
-
-*/
+});
