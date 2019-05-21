@@ -72,11 +72,7 @@ html {
     cursor: pointer;
 }
 
-#googleMap {
-    width: 100%;
-    height: 400px;
-    
-}
+
 
 /* Turn off parallax scrolling for tablets and mobiles */
 @media only screen and (max-width: 1024px) {
@@ -100,7 +96,7 @@ html {
 }
 
 
-/* Clearfix Hack */
+
 .cf:before,
 .cf:after {
     content: " ";
@@ -113,10 +109,7 @@ html {
     clear: both;
 }
 
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
+
 .cf {
     *zoom: 1;
 }
@@ -843,5 +836,6 @@ transform: scale(1.05);
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+
 
   
