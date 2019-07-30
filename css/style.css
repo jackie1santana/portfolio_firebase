@@ -862,3 +862,13 @@ transform: scale(1.05);
     .title-name{
         box-shadow: 8px 8px 8px -5px cyan;
     }
+
+    /*firebase message*/
+    .alert{
+        text-align:center;
+        padding:10px;
+        background-color: #79c879;
+        color:#fff;
+        margin-bottom:10px;
+        display:none;
+    }

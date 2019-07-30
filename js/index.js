@@ -127,3 +127,74 @@ window.addEventListener("load", function(){
     
 
 });
+
+
+
+
+
+
+
+// Your web app's Firebase configuration
+var firebaseConfig = {
+    apiKey: "AIzaSyDcqs-ZnYDfdrH8Ja0VdMO-CQr8zAJwJ0g",
+    authDomain: "portfolioform-17c47.firebaseapp.com",
+    databaseURL: "https://portfolioform-17c47.firebaseio.com",
+    projectId: "portfolioform-17c47",
+    storageBucket: "",
+    messagingSenderId: "495728746198",
+    appId: "1:495728746198:web:fe15e6dcc5f534b4"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+
+//reference messages collections
+var messagesRef = firebase.database().ref('messages')
+
+
+//Firebase Form Data
+document.getElementById('contactForm').addEventListener('submit', submitForm);
+
+
+//submit form
+function submitForm(e){
+    
+e.preventDefault()
+    var name = getInputVal('name');
+    var email = getInputVal('email');
+    var message = getInputVal('message');
+    
+    //save message
+    saveMessage(name, email, message)
+
+
+//show alert
+    document.querySelector(".alert").style.display = 'block';
+
+    //hide alert
+
+    setTimeout(function(){
+        document.querySelector(".alert").style.display = 'none';
+    },3000)
+
+    //clear form input after message sent
+    document.getElementById('contactForm').reset()
+}
+
+//function to get form vlaues
+function getInputVal(id){
+    return document.getElementById(id).value;
+}
+
+//save messages to firebase
+function saveMessage(name, email, message){
+    var newMessageRef = messagesRef.push();
+    newMessageRef.set({
+        name: name,
+        email: email,
+        message: message
+    })
+}
+
+
+

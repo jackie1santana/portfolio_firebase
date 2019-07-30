@@ -441,6 +441,13 @@
 
       <div class="w3-col m8 w3-container w3-section">
         <div class="w3-large w3-margin-bottom">
+
+
+<!--firebase message sent message-->
+<div class="alert">
+Your message has been sent!
+</div>
+
           <i class="fa fa-map-marker w3-hover-text-black" style="width:30px"></i>Houston, Texas<br>
           <i class="fa fa-phone w3-hover-text-black" style="width:30px"></i> Phone: (646)-618-9092<br>
           <i class="fa fa-envelope w3-hover-text-black" style="width:30px"> </i> Email: JackieTristanSantana@Gmail.com<br>
@@ -451,16 +458,16 @@
   
     <div class="content">
         <!--Name-->
-      <form name="contact" netlify>
+      <form id ="contactForm">
         <div class="fields">
           <div class="field half">
-            <input type="text" name="name" id="name" placeholder="Name" />
+            <input type="text" name="name" id="name" placeholder="Name" required/>
           </div>
           </div>
         
           <!--Email-->
           <div class="field half">
-            <input type="email" name="email" id="email" placeholder="Email" />
+            <input type="email" name="email" id="email" placeholder="Email" required/>
           </div>
          
            <br>
@@ -516,7 +523,12 @@
       <p class="w3-center-align">Made with <span class="heart-icon">❤</span> by Jackie Santana <br>  Copyright &copy; 2019 All Rights Reserved</p>
     </div>
   </footer>
-  
+
+  <!--FIrebase script-->
+  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>  
+
 
   <script src="js/index.js"></script>
   
